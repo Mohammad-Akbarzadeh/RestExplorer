@@ -3,6 +3,7 @@ import HomePage from "./Components/HomePage";
 import Countries from "./Components/Countries";
 import About from "./Components/About";
 import Nav from "./Components/Share/Nav";
+import CountryDetails from "./Components/CountriesDetails";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/countries" element={<Countries/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/countries/:countryName" element={<CountryDetails/>}/>
       </Routes>
     </BrowserRouter>
   );
